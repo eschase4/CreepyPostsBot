@@ -1,0 +1,26 @@
+{
+  "name": "twitter-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ai": "^2.0.0",
+    "axios": "^1.4.0",
+    "cron": "^2.3.1",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "open": "^9.1.0",
+    "openai": "^3.3.0",
+    "openai-cli": "^0.0.1",
+    "openai-node": "^1.0.5",
+    "twit": "^2.2.11",
+    "twitter-api-v2": "^1.15.0"
+  }
+}
