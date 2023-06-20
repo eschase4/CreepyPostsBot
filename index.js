@@ -20,7 +20,7 @@ async function generateCreepyStory() {
     Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
   };
 
-  const url = 'https://api.openai.com/v1/engines/curie:ft-personal-2023-06-20-04-31-23/completions';
+  const url = 'https://api.openai.com/v1/engines/davinci:ft-personal-2023-06-20-23-20-48/completions';
 
   try {
     const response = await axios.post(url, data, { headers });

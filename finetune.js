@@ -12,7 +12,7 @@ const openai = new OpenAIApi(configuration);
 //           fs.createReadStream("newdata.jsonl"),
 //           "fine-tune"
 //       );
-//       console.log(`File ID ${f.data.id}`);
+//       console.log(`File ID: ${f.data.id}`);
 //       return f.data.id;
 //   }
 //   catch (err) {
@@ -24,8 +24,8 @@ const openai = new OpenAIApi(configuration);
 // async function makeFineTune() {
 //   try {
 //       const ft = await openai.createFineTune({
-//           training_file: 'file-K8kpS0z12KiU5mAW5k9iyHU9',
-//           model: 'curie'
+//           training_file: 'file-fmZB0vB5hEF96DtqPE4U7VDb',
+//           model: 'davinci'
 //       });
 //       console.log(ft.data);
 //    }
