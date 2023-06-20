@@ -4,7 +4,7 @@ const { twitterClient, openai } = require("./twitterClient.js");
 const axios = require("axios");
 const { sleep } = require('./utils');
 
-console.log(process.env.OPENAI_API_KEY)
+console.log("Running...")
 async function generateCreepyStory() {
   const data = {
     prompt: 'Write a short horror story for a tweet',
