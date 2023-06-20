@@ -8,7 +8,7 @@ console.log("Running...")
 async function generateCreepyStory() {
   const data = {
     prompt: 'Write a short horror story for a tweet',
-    max_tokens: 75,
+    max_tokens: 60,
     temperature: 0.7,
     top_p: 1,
     frequency_penalty: 0,
@@ -55,8 +55,8 @@ async function tweet() {
     }
   }
   
-  const cronTweet = new CronJob("33 * * * *", async () => {
+  // const cronTweet = new CronJob("33 * * * *", async () => {
     tweet();
-  });
+  // });
   
-  cronTweet.start();
+  // cronTweet.start();
