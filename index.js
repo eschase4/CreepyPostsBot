@@ -7,8 +7,8 @@ const { sleep } = require('./utils');
 console.log("Running...")
 async function generateCreepyStory() {
   const data = {
-    prompt: 'Write a short horror story for a tweet',
-    max_tokens: 60,
+    prompt: 'Write a short horror story for a tweet. Get to the ending in under 280 characters.',
+    max_tokens: 62,
     temperature: 0.7,
     top_p: 1,
     frequency_penalty: 0,
@@ -20,7 +20,7 @@ async function generateCreepyStory() {
     Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
   };
 
-  const url = 'https://api.openai.com/v1/engines/davinci:ft-personal-2023-06-20-23-20-48/completions';
+  const url = 'https://api.openai.com/v1/engines/davinci:ft-personal-2023-06-21-01-17-48/completions';
 
   try {
     const response = await axios.post(url, data, { headers });
@@ -55,8 +55,8 @@ async function tweet() {
     }
   }
   
-  const cronTweet = new CronJob("33 * * * *", async () => {
+  // const cronTweet = new CronJob("33 * * * *", async () => {
     tweet();
-  });
+  // });
   
-  cronTweet.start();
+  // cronTweet.start();
