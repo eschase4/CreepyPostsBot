@@ -41,7 +41,7 @@ async function generateCreepyStory() {
 
 async function tweet() {
     try {
-      const num = Math.floor(Math.random() * 10 + 1)
+      const num = Math.floor(Math.random() * 63 + 1)
       const mediaId = await twitterClient.v1.uploadMedia(`./assets/CreepyPost${num}.png`)
       const story = await generateCreepyStory();
       console.log('Creepy story:', story);
