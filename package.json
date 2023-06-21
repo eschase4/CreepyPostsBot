@@ -21,6 +21,7 @@
     "openai": "^3.3.0",
     "openai-cli": "^0.0.1",
     "openai-node": "^1.0.5",
+    "request": "^2.88.2",
     "twit": "^2.2.11",
     "twitter-api-v2": "^1.15.0"
   }

@@ -41,11 +41,18 @@ async function generateCreepyStory() {
 
 async function tweet() {
     try {
+      const num = Math.floor(Math.random() * 11)
+      const mediaId = await twitterClient.v1.uploadMedia(`./assets/CreepyPost${num}.png`)
       const story = await generateCreepyStory();
       console.log('Creepy story:', story);
   
       const client = twitterClient; // Use the Twitter client
-      const response = await client.v2.tweet(story)
+      const response = await client.v2.tweet({
+        text: story,
+        media: {
+          media_ids: [mediaId]
+        }
+      })
   
       console.log('Tweeted successfully:', response);
     } catch (error) {
@@ -59,4 +66,4 @@ async function tweet() {
     tweet();
   });
   
-  cronTweet.start();
+  gtcronTweet.start();
