@@ -43,7 +43,8 @@ If you would like to contribute to this project, you can DM the account tweet-si
 <a name="technologies"></a>
 ## Technologies
 
-This application uses Javascript, Node.js, Express.js, Cron, OpenAI API, Twitter API, and Heroku.
+This application uses Javascript, Node.js, Express.js, Cron, OpenAI's API, and Twitter's API.<br>
+Server hosted via Heroky at https://secure-sierra-90306-8400db56b5d4.herokuapp.com/<br>
 
 <a name="credits"></a>
 ## Credits 
