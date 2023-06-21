@@ -41,7 +41,7 @@ async function generateCreepyStory() {
 
 async function tweet() {
     try {
-      const num = Math.floor(Math.random() * 11)
+      const num = Math.floor(Math.random() * 10 + 1)
       const mediaId = await twitterClient.v1.uploadMedia(`./assets/CreepyPost${num}.png`)
       const story = await generateCreepyStory();
       console.log('Creepy story:', story);
@@ -62,8 +62,8 @@ async function tweet() {
     }
   }
   
-  const cronTweet = new CronJob("33 * * * *", async () => {
+  // const cronTweet = new CronJob("33 * * * *", async () => {
     tweet();
-  });
+  // });
   
-  gtcronTweet.start();
+  // cronTweet.start();

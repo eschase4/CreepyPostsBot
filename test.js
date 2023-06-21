@@ -20,6 +20,6 @@
 // };
 
 // checkAvailableModels();
-const test = Math.floor(Math.random() * 3)
+const test = Math.floor(Math.random() * 10 + 1)
 
 console.log(test)
