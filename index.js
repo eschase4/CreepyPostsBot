@@ -8,8 +8,8 @@ console.log("Running...")
 async function generateCreepyStory() {
   const data = {
     prompt: 'Write a short horror story for a tweet. Get to the ending in under 280 characters.',
-    max_tokens: 62,
-    temperature: 0.7,
+    max_tokens: 50,
+    temperature: 0.5,
     top_p: 1,
     frequency_penalty: 0,
     presence_penalty: 0.6,
