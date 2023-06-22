@@ -24,7 +24,7 @@ const openai = new OpenAIApi(configuration);
 // async function makeFineTune() {
 //   try {
 //       const ft = await openai.createFineTune({
-//           training_file: 'file-6FrDFZlPdk0oCxIs2oCANzYt',
+//           training_file: 'file-1UtXjvfZW6D7gKffMZ2zHQWV',
 //           model: 'davinci'
 //       });
 //       console.log(ft.data);

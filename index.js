@@ -20,7 +20,7 @@ async function generateCreepyStory() {
     Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
   };
 
-  const url = 'https://api.openai.com/v1/engines/davinci:ft-personal-2023-06-21-01-17-48/completions';
+  const url = 'https://api.openai.com/v1/engines/davinci:ft-personal-2023-06-22-00-43-09/completions';
 
   try {
     const response = await axios.post(url, data, { headers });
@@ -62,7 +62,7 @@ async function tweet() {
     }
   }
   
-  const cronTweet = new CronJob("33 * * * *", async () => {
+  const cronTweet = new CronJob("33 */3 * * *", async () => {
     tweet();
   });
   

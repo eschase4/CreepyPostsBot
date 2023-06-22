@@ -23,3 +23,11 @@
 const test = Math.floor(Math.random() * 63 + 1)
 
 console.log(test, Math.random())
+
+// curl --location --insecure --request POST 'https://api.openai.com/v1/chat/completions' \
+// --header 'Authorization: Bearer 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' \
+// --header 'Content-Type: application/json' \
+// --data-raw '{
+//  "model": "text-davinci-003",
+//  "messages": [{"role": "user", "content": "What is the OpenAI mission?"}]
+// }'
