@@ -8,7 +8,7 @@ console.log("Running...")
 async function generateCreepyStory() {
   const data = {
     prompt: 'Write a short horror story for a tweet. Get to the ending in under 280 characters.',
-    max_tokens: 60,
+    max_tokens: 50,
     temperature: 0.15,
     top_p: 1,
     frequency_penalty: 0,
@@ -45,10 +45,12 @@ async function tweet() {
       const mediaId = await twitterClient.v1.uploadMedia(`./assets/CreepyPost${num}.png`)
       const story = await generateCreepyStory();
       console.log('Creepy story:', story);
-  
+      const lastPeriodIndex = story.lastIndexOf(".")
+      const completeStory = story.slice(0, lastPeriodIndex + 1);
       const client = twitterClient; // Use the Twitter client
+
       const response = await client.v2.tweet({
-        text: story,
+        text: completeStory,
         media: {
           media_ids: [mediaId]
         }
@@ -62,7 +64,7 @@ async function tweet() {
     }
   }
   
-  const cronTweet = new CronJob("33 */3 * * *", async () => {
+  const cronTweet = new CronJob("33 */2 * * *", async () => {
     tweet();
   });
   
