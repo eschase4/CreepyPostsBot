@@ -11,7 +11,7 @@ async function generateCreepyStory() {
     max_tokens: 50,
     temperature: 1,
     top_p: 1,
-    frequency_penalty: 0,
+    frequency_penalty: 0.1,
     presence_penalty: 0.6,
   };
 
