@@ -46,7 +46,7 @@ async function tweet() {
       const story = await generateCreepyStory();
       console.log('Creepy story:', story);
       const lastPeriodIndex = story.lastIndexOf(".")
-      const completeStory = story.slice(0, lastPeriodIndex + 1);
+      const completeStory = story.slice(0, lastPeriodIndex + 2);
       const client = twitterClient; // Use the Twitter client
 
       const response = await client.v2.tweet({
