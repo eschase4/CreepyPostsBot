@@ -9,7 +9,7 @@ async function generateCreepyStory() {
   const data = {
     prompt: 'Write a short horror story for a tweet. Get to the ending in under 280 characters.',
     max_tokens: 50,
-    temperature: 1,
+    temperature: 1.5,
     top_p: 1,
     frequency_penalty: 0.1,
     presence_penalty: 0.6,
