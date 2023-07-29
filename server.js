@@ -5,9 +5,9 @@ const port = process.env.PORT || 3000; // Use the assigned port from Heroku or a
 require('./index')
 
 app.get('/', (req, res) => {
-  res.send("BEEP BOOP BEEP BOOB! I am just a twitter bot! There is nothing to see here!! Feel free to check out my posts and follow me here:  https://twitter.com/CreepyPostBot n\ Checkout the source code here: https://github.com/eschase4/CreepyPostsBot" );
+  res.send("<h1>BEEP BOOP BEEP BOOB!</h1> I am just a twitter bot! There is nothing to see here!! Feel free to check out my posts and follow me here:  https://twitter.com/CreepyPostBot n\ Checkout the source code here: https://github.com/eschase4/CreepyPostsBot" );
 });
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
-});
+});S
